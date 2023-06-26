@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Task Name">
+            <input type="text" id="taskDescription" placeholder="Task Description" maxlength="140">
+            <input type="text" id="taskVenue" placeholder="Venue (Optional)">
+            <input type="date" id="taskDeadline">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+        <ul class="taskList">
+            <li class="example-task">
+                <span class="example-title">Example Task</span>
+                <span class="example-desc">Description: This is an example task.</span>
+                <span class="example-venue">Venue: Example Venue</span>
+                <span class="example-deadline">Deadline: 2023-01-01</span>
+            </li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

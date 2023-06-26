@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#addTaskBtn {
+  margin-top: 10px;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.input-container input[type="text"],
+.input-container input[type="date"],
+.input-container textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.input-container button:hover {
+  background-color: #45a049;
+}
+
+.taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.taskList li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: background-color 0.2s ease;
+}
+
+.taskList li:hover {
+  background-color: #f2f2f2;
+}
+
+.task-info {
+  flex-grow: 1;
+}
+
+.task-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.task-desc,
+.task-venue,
+.task-deadline {
+  color: #555;
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #555;
+  cursor: pointer;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.taskList li:hover .edit-btn,
+.taskList li:hover .delete-btn {
+  opacity: 1;
+}
+
+.delete-btn {
+  margin-left: 10px;
+}
+
+/* Add this style to display description, venue, and deadline in separate lines */
+.task-desc::before,
+.task-venue::before,
+.task-deadline::before {
+  display: block;
+  content: "";
+  height: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.button-container button {
+  margin-left: 10px;
+}
+
+  
+  
